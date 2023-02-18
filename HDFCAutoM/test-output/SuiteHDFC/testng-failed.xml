@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteHDFC]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="HDFCtestNG.HdfcNGClass">
+        <methods>
+          <include name="creditLon"/>
+          <include name="beforeMethod"/>
+          <include name="closeTab"/>
+          <include name="openBrowser"/>
+          <include name="closeWeb1"/>
+        </methods>
+      </class> <!-- HDFCtestNG.HdfcNGClass -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="HDFCtestNG.HdfcNGClass">
+        <methods>
+          <include name="creditLon"/>
+          <include name="applyCreditC"/>
+          <include name="beforeMethod"/>
+          <include name="closeTab"/>
+          <include name="openBrowser"/>
+          <include name="closeWeb1"/>
+        </methods>
+      </class> <!-- HDFCtestNG.HdfcNGClass -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [SuiteHDFC] -->
